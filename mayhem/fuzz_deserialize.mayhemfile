@@ -1,0 +1,7 @@
+project: opcua
+target: fuzz-deserialize
+
+cmds:
+  - cmd: /fuzz_deserialize
+  - cmd: /fuzz_deserialize_no_inst @@
+    libfuzzer: false

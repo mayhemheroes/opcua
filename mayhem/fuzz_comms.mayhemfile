@@ -1,0 +1,7 @@
+project: opcua
+target: fuzz-comms
+
+cmds:
+  - cmd: /fuzz_comms
+  - cmd: /fuzz_comms_no_inst @@
+    libfuzzer: false
